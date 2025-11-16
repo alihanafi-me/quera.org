@@ -1,0 +1,16 @@
+*.coverprofile
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.out
+*.so
+*.test
+.env
+.idea/
+.vscode/
+coverage.*
+go.work
+go.work.sum
+profile.cov
+vendor/
