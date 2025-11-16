@@ -1,7 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 func main() {
-	fmt.Println("hello world")
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	count, _ := strconv.Atoi(scanner.Text())
+	result := "W"
+	result += strings.Repeat("o", count)
+	result += "w!"
+
+	fmt.Println(result)
 }
