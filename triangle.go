@@ -11,9 +11,9 @@ import (
 
 func main() {
 	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan()
 	numbers := []int{0, 0, 0}
 
+	scanner.Scan()
 	numbers[0], _ = strconv.Atoi(scanner.Text())
 	scanner.Scan()
 	numbers[1], _ = strconv.Atoi(scanner.Text())
